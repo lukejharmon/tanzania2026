@@ -13,8 +13,8 @@ title: Bioinformatics workshop - Tanzania 2026
 | 10:30 - 11:30 | [Command line basics](command_line_basics.html) |
 | 11:30 - 12:00 | [Challenge 1: Cracking the shell](challenge1.html) |
 | 12:00 - 13:30 | Lunch break |
-| 13:30 - 15:00 | Programming the command line |
-| 15:00 - 16:00 | Challenge 2: Loops and redirects |
+| 13:30 - 15:00 | [Programming the command line](programming_command_line) |
+| 15:00 - 16:00 | [Challenge 2: Loops and redirects](challenge2) |
 | 16:00 - 17:00 | Onesmo presentation |
 
 ## Tuesday October 13, Day 2: Sequence data
