@@ -9,7 +9,7 @@ title: Bioinformatics workshop - Tanzania 2026
 | Time | Session |
 |------|---------|
 | 09:00 - 10:00 | Introductions<br>Talks from the three instructors |
-| 10:00 - 10:30 | Overview lecture plus project management |
+| 10:00 - 10:30 | Introduction to project management |
 | 10:30 - 11:30 | Command line basics |
 | 11:30 - 12:00 | Challenge 1: Cracking the shell |
 | 12:00 - 13:30 | Lunch break |
