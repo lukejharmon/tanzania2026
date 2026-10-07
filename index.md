@@ -9,9 +9,9 @@ title: Bioinformatics workshop - Tanzania 2026
 | Time | Session |
 |------|---------|
 | 09:00 - 10:00 | Introductions<br>Talks from the three instructors |
-| 10:00 - 10:30 | Introduction to project management |
+| 10:00 - 10:30 | [Introduction to project management](1-Intro_project_management.pdf) |
 | 10:30 - 11:30 | [Command line basics](command_line_basics.html) |
-| 11:30 - 12:00 | Challenge 1: Cracking the shell |
+| 11:30 - 12:00 | [Challenge 1: Cracking the shell](challenge1.html) |
 | 12:00 - 13:30 | Lunch break |
 | 13:30 - 15:00 | Programming the command line |
 | 15:00 - 16:00 | Challenge 2: Loops and redirects |
