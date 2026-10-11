@@ -9,7 +9,7 @@ title: Bioinformatics workshop - Tanzania 2026
 | Time | Session |
 |------|---------|
 | 09:00 - 10:00 | Introductions<br>Talks from the three instructors |
-| 10:00 - 10:30 | [Introduction to project management](1-Intro_project_management.pdf) |
+| 10:00 - 10:30 | [Introduction to project management](1-intro_project_management.pdf) |
 | 10:30 - 12:00 | [Command line basics](https://datacarpentry.github.io/shell-genomics/) |
 | 12:00 - 13:30 | Lunch break |
 | 13:30 - 15:00 | [Programming the command line](https://datacarpentry.github.io/shell-genomics/) |
