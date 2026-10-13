@@ -1,0 +1,116 @@
+# The workshop schedule. The home page and the top of each day page are built from this file.
+#
+# For each session:
+#   time:   shown as written
+#   title:  session name
+#   anchor: (optional) id of the matching heading on the day page, so the title becomes a link
+#   who:    (optional) presenter
+#   kind:   talk | hands-on | break | other   (controls the colour of the marker)
+
+- id: day1
+  label: Day 1
+  date: 2026-10-12
+  weekday: Monday
+  day_month: 12 October
+  theme: The shell
+  page: /day1.html
+  sessions:
+    - time: "09:00 – 10:00"
+      title: Introductions
+      anchor: introductions
+      who: Talks from the three instructors
+      kind: talk
+    - time: "10:00 – 10:30"
+      title: Introduction to project management
+      anchor: introduction-to-project-management
+      kind: talk
+    - time: "10:30 – 12:00"
+      title: Command line basics
+      anchor: command-line-basics
+      kind: hands-on
+    - time: "12:00 – 13:30"
+      title: Lunch
+      kind: break
+    - time: "13:30 – 15:00"
+      title: Command line basics, continued
+      anchor: command-line-basics
+      kind: hands-on
+    - time: "16:00 – 17:00"
+      title: Presentation
+      anchor: onesmo-presentation
+      who: Onesmo Balemba
+      kind: talk
+
+- id: day2
+  label: Day 2
+  date: 2026-10-13
+  weekday: Tuesday
+  day_month: 13 October
+  theme: Searching, loops and quality control
+  page: /day2.html
+  sessions:
+    - time: "09:00 – 09:30"
+      title: From sequencing reads to variants
+      anchor: from-reads-to-variants
+      kind: talk
+    - time: "09:30 – 12:30"
+      title: Searching, redirecting and pipes
+      anchor: searching-redirecting-and-pipes
+      kind: hands-on
+    - time: ""
+      title: Variables and loops
+      anchor: variables-and-loops
+      kind: hands-on
+    - time: ""
+      title: Getting the data and FastQC
+      anchor: fastqc
+      kind: hands-on
+    - time: "12:30 – 14:00"
+      title: Lunch
+      kind: break
+    - time: "14:00 – 17:00"
+      title: Science communication
+      anchor: science-communication
+      who: Christine Parent and Onesmo Balemba
+      kind: talk
+    - time: "17:00 – 18:00"
+      title: "Film: Snail Hunters"
+      anchor: snail-hunters
+      kind: other
+
+- id: day3
+  label: Day 3
+  date: 2026-10-14
+  weekday: Wednesday
+  day_month: 14 October
+  theme: Nyerere Day, public holiday
+  holiday: true
+  sessions: []
+
+- id: day4
+  label: Day 4
+  date: 2026-10-15
+  weekday: Thursday
+  day_month: 15 October
+  theme: Putting it all together
+  page: /day4.html
+  sessions:
+    - time: "09:00 – 11:00"
+      title: Plotting results in R
+      anchor: plotting-results-in-r
+      kind: hands-on
+    - time: "11:00 – 12:00"
+      title: Wrap-up and summary of all materials
+      anchor: wrap-up
+      kind: talk
+    - time: "12:00 – 13:30"
+      title: Lunch
+      kind: break
+    - time: "13:30 – 15:00"
+      title: Group work
+      anchor: group-work
+      kind: hands-on
+    - time: "15:00 – 16:00"
+      title: Group presentations
+      anchor: group-presentations
+      kind: talk

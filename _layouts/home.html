@@ -1,0 +1,74 @@
+---
+layout: base
+---
+{% assign seq = "CGTGCGCTTGATCGGAGTGACATAGAACAAAGCTGGCAGGCGACTGATCCGAAGTTCAGGCATTACCGTAGCATGGACTTGCAATCGGTACAGCTTAGCCATGGTACGTTAGCAACGTGGCTACCATGAGTCGAATCCGTAGGCTTA" | split: "" %}
+{% assign qual = "@@@DDDDDHHHHFHJJJIHGIJIJIIHGHIJJJIIJJIHIGIJJHHHHFFFDDDDDDDBDDDDCDDCDDDDDDDDDDCCDDDDDDDDBBDDDCDDDDDDDDDDDDCCCDDDDDDDDDDDDDDDCDDDDDDDDDDDDDDDD@CCDDDDBBDDDDDDDDDDCBDDB" %}
+<div class="hero">
+  <div class="read" aria-hidden="true">
+    <span class="read-line read-meta">@NMAIST.2026.1 length=150</span>
+    <span class="read-line read-seq">{% for b in seq %}<span class="b{{ b }}">{{ b }}</span>{% endfor %}</span>
+    <span class="read-line read-meta">+</span>
+    <span class="read-line read-qual">{{ qual }}</span>
+  </div>
+  <div class="wrap">
+    <h1 class="hero-title">{{ site.title }}</h1>
+    <p class="hero-sub">Nelson Mandela African Institution of Science and Technology, Arusha<br>Monday 12 to Friday 16 October 2026</p>
+  </div>
+</div>
+
+<div class="wrap home">
+  <div class="home-grid">
+    <section class="week" aria-labelledby="week-title">
+      <h2 id="week-title">Schedule</h2>
+      <ol class="days">
+        {% for d in site.data.schedule %}
+        <li class="day-row{% if d.holiday %} is-holiday{% endif %}" data-date="{{ d.date }}">
+          <div class="day-when">
+            <span class="day-wd">{{ d.weekday }}</span>
+            <span class="day-dm">{{ d.day_month }}</span>
+            <span class="today-flag">Today</span>
+          </div>
+          <div class="day-what">
+            <h3>
+              {% if d.page %}<a href="{{ d.page | relative_url }}">{{ d.label }}: {{ d.theme }}</a>
+              {% else %}{{ d.label }}: {{ d.theme }}{% endif %}
+            </h3>
+            {% if d.holiday %}
+              <p class="day-none">No class.</p>
+            {% else %}
+            <ul class="mini">
+              {% for s in d.sessions %}{% unless s.kind == "break" %}
+              <li>
+                {% if s.time != "" %}<span class="mini-time">{{ s.time | split: " " | first }}</span>{% else %}<span class="mini-time"></span>{% endif %}
+                <span>{% if s.anchor %}<a href="{{ d.page | relative_url }}#{{ s.anchor }}">{{ s.title }}</a>{% else %}{{ s.title }}{% endif %}{% if s.who %}<span class="mini-who">, {{ s.who }}</span>{% endif %}</span>
+              </li>
+              {% endunless %}{% endfor %}
+            </ul>
+            {% endif %}
+          </div>
+        </li>
+        {% endfor %}
+      </ol>
+    </section>
+
+    <div class="side">
+      {% include connect.html %}
+
+      <section class="quick" aria-labelledby="quick-title">
+        <h2 id="quick-title">Keep these open</h2>
+        <ul>
+          <li><a href="{{ '/command_line_basics.html' | relative_url }}">Shell cheat sheet</a></li>
+          <li><a href="{{ '/programming_command_line.html' | relative_url }}">Programming the command line: cheat sheet</a></li>
+          <li><a href="{{ '/resources.html' | relative_url }}">Challenges, R exercises and data files</a></li>
+        </ul>
+      </section>
+
+      {% assign notes = content | strip_html | strip %}
+      {% if notes != "" %}
+      <section class="notes">
+        {{ content }}
+      </section>
+      {% endif %}
+    </div>
+  </div>
+</div>

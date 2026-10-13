@@ -1,3 +1,7 @@
+---
+title: "Shell for Genomics: Cheat Sheet"
+---
+
 # Shell for Genomics: Cheat Sheet
 
 Oct 6, 2026 · @Luke Harmon

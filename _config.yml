@@ -1,0 +1,28 @@
+title: Workshop on Bioinformatics and Microbiome Research
+short_title: Bioinformatics & Microbiome
+description: NM-AIST, Arusha, Tanzania · 12–16 October 2026
+baseurl: /tanzania2026
+url: https://lukejharmon.github.io
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+highlighter: rouge
+
+# Every page uses our own layout (not the default GitHub theme)
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: page
+
+# Not published to the website.
+# The answer keys are for instructors only: delete a line here to publish it.
+exclude:
+  - challenge1_answers.md
+  - challenge2_answers.md
+  - README.md
+  - Gemfile
+  - Gemfile.lock

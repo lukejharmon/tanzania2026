@@ -1,0 +1,32 @@
+---
+layout: base
+---
+{% assign d = site.data.schedule | where: "id", page.day | first %}
+<div class="wrap day">
+  <header class="day-head">
+    <p class="day-date">{{ d.label }}, {{ d.weekday }} {{ d.day_month }}</p>
+    <h1>{{ d.theme }}</h1>
+  </header>
+
+  <div class="day-grid">
+    <aside class="timeline" aria-label="Schedule for {{ d.weekday }}">
+      <ol>
+        {% for s in d.sessions %}
+        <li class="slot slot-{{ s.kind }}">
+          {% if s.time != "" %}<span class="slot-time">{{ s.time }}</span>{% endif %}
+          {% if s.anchor %}
+            <a class="slot-title" href="#{{ s.anchor }}">{{ s.title }}</a>
+          {% else %}
+            <span class="slot-title">{{ s.title }}</span>
+          {% endif %}
+          {% if s.who %}<span class="slot-who">{{ s.who }}</span>{% endif %}
+        </li>
+        {% endfor %}
+      </ol>
+    </aside>
+
+    <div class="prose day-body">
+      {{ content }}
+    </div>
+  </div>
+</div>

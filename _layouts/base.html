@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title and page.url != "/" %}{{ page.title }} | {% endif %}{{ site.short_title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/site.css' | relative_url }}">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="{{ '/' | relative_url }}">{{ site.short_title }}</a>
+      <nav class="nav" aria-label="Main">
+        {% for d in site.data.schedule %}
+          {% if d.page %}
+            <a href="{{ d.page | relative_url }}" data-date="{{ d.date }}"
+               {% if page.day == d.id %}aria-current="page"{% endif %}>
+{{ d.weekday | slice: 0, 3 }} {{ d.date | date: "%-d" }}
+            </a>
+          {% endif %}
+        {% endfor %}
+        <a href="{{ '/resources.html' | relative_url }}" {% if page.url == "/resources.html" %}aria-current="page"{% endif %}>Resources</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    {{ content }}
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>{{ site.title }}<br>Nelson Mandela African Institution of Science and Technology, Arusha, with the University of Idaho.</p>
+      <p>Lesson material adapted from <a href="https://datacarpentry.org/">Data Carpentry</a> (CC-BY 4.0).</p>
+    </div>
+  </footer>
+
+  <script>
+    // Copy buttons on every code block
+    document.querySelectorAll('pre').forEach(function (pre) {
+      var btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'copy';
+      btn.textContent = 'Copy';
+      btn.addEventListener('click', function () {
+        var text = pre.querySelector('code') ? pre.querySelector('code').innerText : pre.innerText;
+        navigator.clipboard.writeText(text).then(function () {
+          btn.textContent = 'Copied';
+          setTimeout(function () { btn.textContent = 'Copy'; }, 1500);
+        });
+      });
+      pre.parentNode.insertBefore(btn, pre);
+      pre.parentNode.classList.add('has-copy');
+    });
+
+    // Mark today's day in the navigation and on the home page
+    (function () {
+      var d = new Date();
+      var today = d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+      document.querySelectorAll('[data-date="' + today + '"]').forEach(function (el) {
+        el.classList.add('is-today');
+      });
+    })();
+  </script>
+</body>
+</html>
