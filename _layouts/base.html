@@ -36,8 +36,14 @@
 
   <footer class="footer">
     <div class="footer-inner">
+      {% unless page.layout == "home" %}<div class="logos">
+        <img src="{{ '/assets/nm-aist.png' | relative_url }}" alt="Nelson Mandela African Institution of Science and Technology" width="219" height="201">
+        <img src="{{ '/assets/uidaho.png' | relative_url }}" alt="University of Idaho" width="272" height="300">
+      </div>{% endunless %}
+      <div class="footer-text">
       <p>{{ site.title }}<br>Nelson Mandela African Institution of Science and Technology, Arusha, with the University of Idaho.</p>
       <p>Lesson material adapted from <a href="https://datacarpentry.org/">Data Carpentry</a> (CC-BY 4.0).</p>
+      </div>
     </div>
   </footer>
 
