@@ -5,6 +5,7 @@ title: Bioinformatics workshop - Tanzania 2026
 # Bioinformatics workshop - Tanzania 2026
 
 ## Monday October 12, Day 1: Introduction to Bioinformatics: The Shell
+
 | Time | Session |
 |------|---------|
 | 09:00 – 10:00 | [Introductions](#introductions) |
