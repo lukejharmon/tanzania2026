@@ -12,7 +12,7 @@ title: "Day 2: Searching, loops and quality control"
 An overview of the whole pipeline we are building this week:
 raw reads, quality control, trimming, alignment to a reference, variant calling, then analysis in R.
 
-Slides: [Variant calling workflow](LINK-TO-SLIDES)
+Slides: [Variant calling workflow](variant.pdf)
 
 **Today's code comes from these Data Carpentry lessons.** Read them to review, or to keep going past where we stopped:
 
