@@ -250,7 +250,9 @@ some checks (like *Per base sequence content*) often fail for normal reasons.
 14:00 – 17:00, with Christine Parent and Onesmo Balemba
 {: .session-time}
 
-Readings: [Examples of NIH Specific Aims](specific_aims_examples.html)
+- Slides: [How to tell your story](tellStory.pdf) (PDF)
+- Sample NIH Specific Aims: [Examples](specific_aims_examples.html)
+- NIH R01 funding announcement: [PA-25-301](PA-25-301%20R01.pdf) (PDF)
 
 ## Film: *Snail Hunters* {#snail-hunters}
 
