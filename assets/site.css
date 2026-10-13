@@ -255,15 +255,18 @@ article.prose { padding-top: 40px; padding-bottom: 72px; }
 /* ---------- Partner logos ---------- */
 
 .partners { background: var(--surface); border-bottom: 1px solid var(--line); }
-.partners-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-top: 18px; padding-bottom: 18px; }
-.partners p { margin: 0; color: var(--muted); max-width: 46ch; }
-.logos { display: flex; align-items: center; gap: 28px; flex-shrink: 0; }
-.logos img { height: 88px; width: auto; display: block; }
+.partners-inner { display: flex; align-items: center; gap: 32px; padding-top: 22px; padding-bottom: 22px; }
+.partners-text { margin: 0; color: var(--muted); line-height: 1.5; }
+.partners-text strong { color: var(--ink); font-weight: 600; }
+.logos { display: flex; align-items: center; flex-shrink: 0; }
+.logos img { height: 64px; width: auto; display: block; }
+.logos img + img { margin-left: 22px; padding-left: 22px; border-left: 1px solid var(--line); box-sizing: content-box; }
 
 /* ---------- Footer ---------- */
 
 .footer { border-top: 1px solid var(--line); color: var(--muted); font-size: 15px; background: var(--surface); }
-.footer-inner .logos img { height: 56px; }
+.footer-inner .logos img { height: 48px; }
+.footer-inner .logos img + img { margin-left: 16px; padding-left: 16px; }
 .footer-inner { align-items: center; }
 .footer-inner { max-width: var(--wrap); margin: 0 auto; padding: 24px; display: flex; gap: 32px; flex-wrap: wrap; }
 .footer-text { display: flex; flex-direction: column; gap: 8px; }
@@ -288,8 +291,8 @@ article.prose { padding-top: 40px; padding-bottom: 72px; }
   .day-row { grid-template-columns: minmax(0, 1fr); gap: 8px; }
   .day-when { flex-direction: row; gap: 8px; align-items: baseline; flex-wrap: wrap; }
   .today-flag { margin-top: 0; }
-  .partners-inner { flex-direction: column; align-items: flex-start; }
-  .logos img { height: 56px; }
+  .partners-inner { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .partners-text br { display: none; }
   .prose td:first-child { white-space: normal; }
   .prose table { display: block; overflow-x: auto; }
   .prose pre { font-size: 13.5px; }
