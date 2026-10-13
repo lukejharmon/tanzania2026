@@ -45,6 +45,7 @@ Right-click a file and choose *Save link as* to download it.
 - [How to tell your story](tellStory.pdf) (slides, PDF)
 - [Examples of NIH Specific Aims](specific_aims_examples.html)
 - [NIH R01 funding announcement, PA-25-301](PA-25-301%20R01.pdf) (PDF)
+- [Variant calling workflow](variant.pdf) (slides, PDF)
 - [Introduction to project management](1-intro_project_management.pdf) (slides, PDF)
 
 ## Data Carpentry lessons
