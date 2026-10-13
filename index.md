@@ -11,7 +11,7 @@ title: Bioinformatics workshop - Tanzania 2026
 | 10:00 – 10:30 | [Introduction to project management](#introduction-to-project-management) |
 | 10:30 – 12:00 | [Command line basics](#command-line-basics) |
 | 12:00 – 13:30 | Lunch break |
-| 13:30 – 15:00 | [Programming the command line](#programming-the-command-line) |
+| 13:30 – 15:00 | [Command line basics continued](#command-line-basics) |
 | 16:00 – 17:00 | [Onesmo presentation](#onesmo-presentation) |
 
 ---
@@ -34,36 +34,67 @@ Talks from the three instructors.
 
 ## Command line basics
 
-**10:30 – 12:00**
-
 ### Code we used
 
 ```bash
 # --- Logging in ---------------------------------------------------------
-# Connect to your cloud computer (replace with your pair's address)
-ssh dcuser@ec2-XX-XX-XX-XX.compute-1.amazonaws.com
+# Connect to your cloud computer (replace XX with your pair's address)
+tinyurl.com/nmaistXX
+# user: dcuser; password: data4Carp
 
-# --- Where am I? ---------------------------------------------------------
-pwd                     # print working directory: where you are right now
-whoami                  # which user you are logged in as
-ls                      # list the files and folders here
-ls -F                   # same, but folders end in /
-ls -l                   # long listing: permissions, size, date
-ls -lh                  # long listing with human-readable sizes (K, M, G)
-ls -a                   # show hidden files (names starting with .)
+# clear screen
+clear
+# go home
+cd ~
+# change directory
+cd shell_data/untrimmed_fastq
+# list
+ls
+# see the full contents of a file
+cat SRR098026.fastq
+# interactive file viewer
+less SRR098026.fastq # type q to exit
+# when you are in less: space is forward, b back, g beginning, G end, q quit
 
-# --- Moving around -------------------------------------------------------
-cd shell_data           # go into a folder
-cd untrimmed_fastq      # go one level deeper
-cd ..                   # go up one level
-cd                      # go home, from anywhere
-cd ~/shell_data/untrimmed_fastq   # full path, using ~ for home
+# head shows the file beginning; tail shows the file end
+head SRR098026.fastq
+tail SRR098026.fastq
+head -n 4 SRR098026.fastq 
 
-# --- Shortcuts -----------------------------------------------------------
-# Tab        : autocomplete file and folder names (use it constantly!)
-# Up arrow   : bring back the previous command
-# Ctrl + C   : cancel a command that is running or stuck
-history                 # list the commands you have run
+# copy a file
+cp SRR098026.fastq SRR098026-copy.fastq
+ls
+# create a new directory
+mkdir backup
+ls -F
+# move the file
+mv SRR098026-copy.fastq backup
+# check if it worked
+ls
+ls backup
+
+# rename a file
+cd backup
+mv -i SRR098026-copy.fastq SRR098026-backup.fastq
+ls
+
+# file permissions
+ls -l
+chmod -w SRR098026-backup.fastq
+ls -l
+# check file permission by trying to delete
+rm SRR098026-backup.fastq
+cd ..
+rm -r backup
+ls
+
+cp SRR097977.fastq SRR097977-backup.fastq
+cp SRR098026.fastq SRR098026-backup.fastq
+mkdir backup
+mv *backup.fastq backup
+cd backup
+chmod -w *
+
 ```
 
 ### Cheat sheet
@@ -78,72 +109,6 @@ history                 # list the commands you have run
 | `man ls` | Manual page for a command (`q` to quit) |
 | `Tab` | Autocomplete |
 | `Ctrl + C` | Stop a running command |
-
-**Paths:** `/` at the start means "from the root" (an *absolute* path).
-No `/` at the start means "from where I am now" (a *relative* path). `~` means your home folder.
-
-### Go further
-
-📘 Data Carpentry lessons:
-- [Introducing the Shell](https://datacarpentry.github.io/shell-genomics/01-introduction.html)
-- [Navigating Files and Directories](https://datacarpentry.github.io/shell-genomics/02-the-filesystem.html)
-
----
-
-## Programming the command line
-
-**13:30 – 15:00**
-
-### Code we used
-
-```bash
-cd ~/shell_data/untrimmed_fastq
-
-# --- Wildcards -----------------------------------------------------------
-ls *.fastq              # every file ending in .fastq
-ls SRR097977*           # every file starting with SRR097977
-
-# --- Looking inside files ------------------------------------------------
-cat SRR098026.fastq     # dump the whole file to the screen (careful with big files!)
-less SRR097977.fastq    # scroll through a file: space = page down, q = quit
-head -n 4 SRR098026.fastq   # first 4 lines = the first read
-tail -n 4 SRR098026.fastq   # last 4 lines = the last read
-
-# --- Copying, moving, renaming, deleting --------------------------------
-cp SRR098026.fastq SRR098026-copy.fastq   # copy a file
-mkdir backup                               # make a new folder
-mv SRR098026-copy.fastq backup/            # move a file into a folder
-mv backup/SRR098026-copy.fastq backup/SRR098026-backup.fastq   # rename
-chmod -w backup/SRR098026-backup.fastq     # remove write permission (protect it)
-rm -r backup                               # delete a folder and everything in it (no undo!)
-
-# --- Searching with grep -------------------------------------------------
-grep NNNNNNNNNN SRR098026.fastq            # lines containing 10 Ns in a row
-grep -B1 -A2 NNNNNNNNNN SRR098026.fastq    # plus 1 line before and 2 after = the whole read
-grep -v NNNNNNNNNN SRR098026.fastq         # lines that do NOT match
-
-# --- Saving output -------------------------------------------------------
-grep -B1 -A2 NNNNNNNNNN SRR098026.fastq > bad_reads.txt    # write to a file (overwrites!)
-grep -B1 -A2 NNNNNNNNNN SRR097977.fastq >> bad_reads.txt   # append to the end of a file
-
-# --- Counting, and pipes -------------------------------------------------
-wc -l bad_reads.txt                        # count lines in a file
-grep NNNNNNNNNN SRR098026.fastq | wc -l    # | sends output of one command into the next
-
-# --- Loops ---------------------------------------------------------------
-for filename in *.fastq
-do
-    head -n 2 ${filename}                  # print the first 2 lines of each file
-done
-
-# basename strips part of a name - useful for naming output files
-basename SRR097977.fastq .fastq            # prints: SRR097977
-```
-
-### Cheat sheet
-
-| Command | What it does |
-|---|---|
 | `*` | Wildcard: matches any characters |
 | `cat file` | Print a whole file |
 | `less file` | Scroll through a file (`q` to quit, `/word` to search) |
@@ -161,15 +126,17 @@ basename SRR097977.fastq .fastq            # prints: SRR097977
 | `for x in ...; do ...; done` | Repeat a command for each item |
 | `basename name .ext` | Strip the extension from a file name |
 
+**Paths:** `/` at the start means "from the root" (an *absolute* path).
+No `/` at the start means "from where I am now" (a *relative* path). `~` means your home folder.
+
 **A FASTQ read is always 4 lines:** `@` header · sequence · `+` · quality scores.
+
 
 ### Go further
 
 📘 Data Carpentry lessons:
-- [Working with Files and Directories](https://datacarpentry.github.io/shell-genomics/03-working-with-files.html)
-- [Redirection](https://datacarpentry.github.io/shell-genomics/04-redirection.html)
-- [Full shell-genomics lesson](https://datacarpentry.github.io/shell-genomics/)
-
+- [Introducing the Shell](https://datacarpentry.github.io/shell-genomics/01-introduction.html)
+- [Navigating Files and Directories](https://datacarpentry.github.io/shell-genomics/02-the-filesystem.html)
 ---
 
 ## Onesmo presentation
