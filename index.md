@@ -396,13 +396,10 @@ some checks (like *Per base sequence content*) often fail for normal reasons.
 
 ---
 
-## Science communication with Christine Parent
-
-### Introduction to project management
-
-**10:00 – 10:30**
+## Science communication with Christine and Onesmo
 
 📄 Slides: [How to tell your story](tellStory.pdf)
+📄 Sample NIH specific aims: [Examples](specific_aims_examples)
 
 ---
 
