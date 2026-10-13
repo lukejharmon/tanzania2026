@@ -398,7 +398,11 @@ some checks (like *Per base sequence content*) often fail for normal reasons.
 
 ## Science communication with Christine Parent
 
-**14:00 – 17:00**
+### Introduction to project management
+
+**10:00 – 10:30**
+
+📄 Slides: [How to tell your story](tellStory.pdf)
 
 ---
 
