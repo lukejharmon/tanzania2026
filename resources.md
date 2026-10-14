@@ -43,7 +43,7 @@ Right-click a file and choose *Save link as* to download it.
 
 ## Readings
 
-- [How to tell your story](tellStory.pdf) (slides, PDF)
+- [How to tell your story](tellStory.pdf), Christine Parent (slides, PDF)
 - [Elements of a successful grant application](balemba_nih_grant_writing.pdf), Onesmo Balemba (slides, PDF)
 - [Does gut microbiome dysbiosis drive GI neuropathy in type 2 diabetes?](balemba_gut_microbiome_seminar.pdf), Onesmo Balemba (seminar slides, PDF)
 - [Examples of NIH Specific Aims](specific_aims_examples.html)

@@ -250,7 +250,7 @@ some checks (like *Per base sequence content*) often fail for normal reasons.
 14:00 – 17:00, with Christine Parent and Onesmo Balemba
 {: .session-time}
 
-- Slides: [How to tell your story](tellStory.pdf) (PDF)
+- Slides: [How to tell your story](tellStory.pdf), Christine Parent (PDF)
 - Slides: [Elements of a successful grant application](balemba_nih_grant_writing.pdf), Onesmo Balemba (PDF)
 - Sample NIH Specific Aims: [Examples](specific_aims_examples.html)
 - NIH R01 funding announcement: [PA-25-301](PA-25-301%20R01.pdf) (PDF)
@@ -259,3 +259,8 @@ some checks (like *Per base sequence content*) often fail for normal reasons.
 
 17:00 – 18:00
 {: .session-time}
+
+A documentary by Jim Aikman following University of Idaho evolutionary biologists to the Galápagos, where they study
+land snails rather than the islands' famous tortoises and boobies.
+
+Trailer: [Snail Hunters on YouTube](https://www.youtube.com/watch?v=0qiAMNMxrJU)

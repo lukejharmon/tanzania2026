@@ -335,7 +335,7 @@ experiment in the [Background and Metadata](https://datacarpentry.github.io/wran
 A mock review panel, following up on Tuesday's Specific Aims activity and homework.
 
 - [Examples of NIH Specific Aims](specific_aims_examples.html)
-- [How to tell your story](tellStory.pdf) (slides, PDF)
+- [How to tell your story](tellStory.pdf), Christine Parent (slides, PDF)
 - [Elements of a successful grant application](balemba_nih_grant_writing.pdf), Onesmo Balemba (slides, PDF)
 - [NIH R01 funding announcement, PA-25-301](PA-25-301%20R01.pdf) (PDF)
 
