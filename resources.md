@@ -32,7 +32,8 @@ Right-click a file and choose *Save link as* to download it.
 
 | File | What's in it |
 |---|---|
-| [Microbiome.csv](Microbiome.csv) | Bacterial phylum counts for mouse samples, by source |
+| [mouse_microbiome.csv](mouse_microbiome.csv) | Bacterial phylum read counts for 15 mice, sampled from gut and stool (Day 4 R lesson) |
+| [Microbiome.csv](Microbiome.csv) | The same data in its original form, used by the Microbiome exercise script |
 | [anole_data.csv](anole_data.csv) | Body measurements for *Anolis* lizard species |
 | [ecomorph.csv](ecomorph.csv) | Ecomorph category for each *Anolis* species |
 | [anolis.tre](anolis.tre) | Phylogeny of *Anolis* species (Newick format) |

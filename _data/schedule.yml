@@ -92,25 +92,25 @@
   date: 2026-10-15
   weekday: Thursday
   day_month: 15 October
-  theme: Putting it all together
+  theme: Moving files, R, and a mock grant panel
   page: /day4.html
   sessions:
-    - time: "09:00 – 11:00"
-      title: Plotting results in R
-      anchor: plotting-results-in-r
+    - time: "09:00 – 09:45"
+      title: Moving files with scp
+      anchor: moving-files
       kind: hands-on
-    - time: "11:00 – 12:00"
-      title: Wrap-up and summary of all materials
+    - time: "09:45 – 11:35"
+      title: Introduction to R
+      anchor: intro-to-r
+      kind: hands-on
+    - time: "11:35 – 12:30"
+      title: Wrap-up
       anchor: wrap-up
       kind: talk
-    - time: "12:00 – 13:30"
+    - time: "12:30 – 14:00"
       title: Lunch
       kind: break
-    - time: "13:30 – 15:00"
-      title: Group work
-      anchor: group-work
-      kind: hands-on
-    - time: "15:00 – 16:00"
-      title: Group presentations
-      anchor: group-presentations
-      kind: talk
+    - time: "14:00 – 16:00"
+      title: Mock grant review panel
+      anchor: mock-grant-panel
+      kind: other
