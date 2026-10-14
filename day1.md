@@ -130,3 +130,7 @@ The full one-page reference: [shell cheat sheet](command_line_basics.html).
 
 16:00 – 17:00
 {: .session-time}
+
+*Does gut microbiome dysbiosis drive gastrointestinal neuropathy and dysmotility in type 2 diabetes?*
+
+Slides: [Gut microbiome and GI neuropathy in type 2 diabetes](balemba_gut_microbiome_seminar.pdf) (PDF, 3.6 MB)

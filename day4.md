@@ -336,6 +336,7 @@ A mock review panel, following up on Tuesday's Specific Aims activity and homewo
 
 - [Examples of NIH Specific Aims](specific_aims_examples.html)
 - [How to tell your story](tellStory.pdf) (slides, PDF)
+- [Elements of a successful grant application](balemba_nih_grant_writing.pdf), Onesmo Balemba (slides, PDF)
 - [NIH R01 funding announcement, PA-25-301](PA-25-301%20R01.pdf) (PDF)
 
 ## Wrap-up {#wrap-up}
