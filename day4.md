@@ -107,7 +107,7 @@ To download, tick a file, then click the gear icon (**More**) and choose **Expor
 
 ## Introduction to R {#intro-to-r}
 
-09:45 – 11:35, with a short break
+09:45 – 12:15, with a short break
 {: .session-time}
 
 We will analyse the file you just uploaded: counts of DNA sequencing reads from five groups of bacteria
@@ -327,9 +327,20 @@ experiment in the [Background and Metadata](https://datacarpentry.github.io/wran
 - [R exercises 1 to 4](resources.html#r-exercises) on the Resources page
 {: .lesson}
 
+## Mock grant review panel {#mock-grant-panel}
+
+14:00 – 16:00
+{: .session-time}
+
+A mock review panel, following up on Tuesday's Specific Aims activity and homework.
+
+- [Examples of NIH Specific Aims](specific_aims_examples.html)
+- [How to tell your story](tellStory.pdf) (slides, PDF)
+- [NIH R01 funding announcement, PA-25-301](PA-25-301%20R01.pdf) (PDF)
+
 ## Wrap-up {#wrap-up}
 
-11:35 – 12:30
+16:00 – 17:00
 {: .session-time}
 
 This week you:
@@ -344,14 +355,3 @@ This week you:
 
 Before you leave: download anything you want to keep from your cloud computer. Everything from the week is on the
 [Resources](resources.html) page, which stays online.
-
-## Mock grant review panel {#mock-grant-panel}
-
-14:00 – 16:00
-{: .session-time}
-
-A mock review panel, following up on Tuesday's Specific Aims activity and homework.
-
-- [Examples of NIH Specific Aims](specific_aims_examples.html)
-- [How to tell your story](tellStory.pdf) (slides, PDF)
-- [NIH R01 funding announcement, PA-25-301](PA-25-301%20R01.pdf) (PDF)

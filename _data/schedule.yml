@@ -99,18 +99,18 @@
       title: Moving files with scp
       anchor: moving-files
       kind: hands-on
-    - time: "09:45 – 11:35"
+    - time: "09:45 – 12:15"
       title: Introduction to R
       anchor: intro-to-r
       kind: hands-on
-    - time: "11:35 – 12:30"
-      title: Wrap-up
-      anchor: wrap-up
-      kind: talk
-    - time: "12:30 – 14:00"
+    - time: "12:15 – 14:00"
       title: Lunch
       kind: break
     - time: "14:00 – 16:00"
       title: Mock grant review panel
       anchor: mock-grant-panel
       kind: other
+    - time: "16:00 – 17:00"
+      title: Wrap-up
+      anchor: wrap-up
+      kind: talk
