@@ -35,6 +35,7 @@ http://ec2-11-22-33-44.compute-1.amazonaws.com:8787
 ```
 
 Your server name is the part between `http://` and `:8787`, here `ec2-11-22-33-44.compute-1.amazonaws.com`.
+Your server name is also listed in the [pairs sheet](https://docs.google.com/spreadsheets/d/1qHxClZ4czNaRe3vR5r_EFiA0GDB3H_ec172T2ExTgTQ/edit?usp=sharing).
 In all the commands below, replace `SERVER` with your server name.
 
 ### Step 3: Upload a file to the server
