@@ -263,4 +263,9 @@ some checks (like *Per base sequence content*) often fail for normal reasons.
 A documentary by Jim Aikman following University of Idaho evolutionary biologists to the Galápagos, where they study
 land snails rather than the islands' famous tortoises and boobies.
 
+<a class="video" href="https://www.youtube.com/watch?v=0qiAMNMxrJU" aria-label="Watch the Snail Hunters trailer on YouTube">
+  <img src="https://i.ytimg.com/vi/0qiAMNMxrJU/hqdefault.jpg" alt="Still from the Snail Hunters trailer" loading="lazy">
+  <span class="video-play" aria-hidden="true"></span>
+</a>
+
 Trailer: [Snail Hunters on YouTube](https://www.youtube.com/watch?v=0qiAMNMxrJU)
