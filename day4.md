@@ -519,6 +519,8 @@ experiment in the [Background and Metadata](https://datacarpentry.github.io/wran
 
 A mock review panel, following up on Tuesday's Specific Aims activity and homework.
 
+**Shared folder for the panel:** [Google Drive folder](https://drive.google.com/drive/folders/15Bam83H0JDrIc0zHbfQwbVQoIS5_g8cN?usp=share_link)
+
 - [Examples of NIH Specific Aims](specific_aims_examples.html)
 - [How to tell your story](tellStory.pdf), Christine Parent (slides, PDF)
 - [Elements of a successful grant application](balemba_nih_grant_writing.pdf), Onesmo Balemba (slides, PDF)
