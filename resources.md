@@ -11,6 +11,10 @@ Everything from the workshop in one place.
 - [Shell cheat sheet](command_line_basics.html): every command from the shell lesson, in teaching order
 - [Programming the command line](programming_command_line.html): grep, redirection, pipes, loops and scripts
 
+## Keep going
+
+- [Keep going](keep-going.html): the material we didn't have time for, step by step, to try on your own
+
 ## Challenges
 
 - [Challenge 1: Cracking the shell](challenge1.html)

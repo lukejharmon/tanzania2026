@@ -25,6 +25,7 @@
             </a>
           {% endif %}
         {% endfor %}
+        <a href="{{ '/keep-going.html' | relative_url }}" {% if page.url == "/keep-going.html" %}aria-current="page"{% endif %}>Keep going</a>
         <a href="{{ '/resources.html' | relative_url }}" {% if page.url == "/resources.html" %}aria-current="page"{% endif %}>Resources</a>
       </nav>
     </div>

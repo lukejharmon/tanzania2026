@@ -355,5 +355,7 @@ This week you:
 - moved files between your laptop and a server with `scp`
 - read, summarised, plotted and tested data in R
 
+To carry on where we stopped (trimming, alignment, variant calling, microbiome analysis and more R), see [Keep going](keep-going.html).
+
 Before you leave: download anything you want to keep from your cloud computer. Everything from the week is on the
 [Resources](resources.html) page, which stays online.
