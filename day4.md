@@ -349,7 +349,7 @@ more Firmicutes than the gut sample, some by a lot. Because the samples come in 
 - **Read the code.** Ask the AI to explain any line you don't understand. You are responsible for code you use.
 - **Paste errors back.** If the code fails, copy the error message into the chat and ask what went wrong.
 - **Expect confident mistakes.** AI can invent column names, functions or packages, and choose the wrong statistical test. Check against your data and your question.
-- **Protect your data.** Don't paste unpublished, confidential or patient data. The `str()` description is usually enough.
+- **Check whether you're allowed.** Patient data, human genomic data, peer review material and other people's unpublished data often come with rules about where they can go. If in doubt, describe the data (like `str()`) rather than pasting it.
 - **Be open about it.** Many journals ask you to say how you used AI; check their rules.
 
 **Try it:** ask the AI to change the plot so the lines are coloured by whether Firmicutes went up or down from gut to stool.
