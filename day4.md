@@ -57,6 +57,10 @@ Now copy it up to your home folder on the server:
 scp mouse_microbiome.csv dcuser@SERVER:
 ```
 
+**Don't forget the colon (`:`) at the end.** Without it, `scp` doesn't connect to the server at all: it silently
+makes a copy on your laptop called `dcuser@ec2-...`, with no password request.
+{: .tip}
+
 The first time, you will see `Are you sure you want to continue connecting (yes/no/[fingerprint])?`
 Type `yes` and press Enter. Then type the password, `data4Carp`. **Nothing appears while you type the password.** That is normal: type it and press Enter.
 
@@ -92,6 +96,7 @@ Always run `scp` **on your laptop**. The laptop side is written as a plain path;
 | `No such file or directory` | You are not in the folder that has the file | `cd ~/Downloads`, then `ls` to check the file name |
 | `Permission denied, please try again` | Wrong password | Type `data4Carp` again carefully (capital C) |
 | `Could not resolve hostname` | Wrong server name | Copy it again from the address bar, without `http://` or `:8787` |
+| No password request, and no file on the server | The `:` after the server name is missing | Add the `:` and run it again |
 | `Connection timed out` | The network is blocking `scp` | Use RStudio instead (below) |
 | `'scp' is not recognized` | Older Windows without scp | Use RStudio instead (below) |
 | Prompt says `dcuser@ip-...` | You are typing on the server | Open a terminal on your laptop |
