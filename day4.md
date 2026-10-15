@@ -340,8 +340,8 @@ ggplot(micro, aes(x = Source, y = Firm_prop)) +
 ggsave("firmicutes_gut_vs_stool.png", width = 6, height = 5, dpi = 300)
 ```
 
-The lines show something the boxplot hides: in most mice, the stool sample has more Firmicutes than the gut sample.
-That is why the paired test in section 9 is the right one. Download your PNG with `scp`, like the CSV in section 10.
+The lines show something the boxplot hides: which samples belong together. In 9 of the 15 mice the stool sample has
+more Firmicutes than the gut sample, some by a lot. Because the samples come in pairs, the paired test in section 9 is the right one. Download your PNG with `scp`, like the CSV in section 10.
 
 **Using AI well:**
 
