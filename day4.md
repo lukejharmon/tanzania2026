@@ -292,6 +292,69 @@ scp dcuser@SERVER:microbiome_results.csv .
 
 Save your script too (`intro_R.R`) and download it the same way.
 
+### 11. Let AI help you write code
+
+AI chatbots such as [Claude](https://claude.ai), [ChatGPT](https://chatgpt.com) or [Gemini](https://gemini.google.com)
+(all have free versions) can write R code for you. The trick is to tell them exactly what you have and what you want.
+
+First, get a description of your data to paste into the chatbot:
+
+```r
+str(micro)
+```
+
+Then write a prompt like this one, pasting your own `str()` output where shown:
+
+```
+I'm using R with the ggplot2 package. I have a data frame called micro.
+Here is the output of str(micro):
+
+[paste the output here]
+
+Each of 15 mice (column Mouse) was sampled twice: once from the gut and once
+from the stool (column Source). Firm_prop is the proportion of reads from
+Firmicutes. Make a publication-quality plot comparing Firm_prop between Gut and
+Stool: boxplots, every sample as a point, and a line joining the two samples
+from the same mouse. Use clear axis labels and a clean theme, then save it as
+a PNG. Briefly explain what each line of code does.
+```
+
+The answer will look something like this. Copy it into your script and run it:
+
+```r
+library(ggplot2)
+
+ggplot(micro, aes(x = Source, y = Firm_prop)) +
+  geom_boxplot(aes(fill = Source), width = 0.5, alpha = 0.4, outlier.shape = NA) +
+  geom_line(aes(group = Mouse), colour = "grey60") +      # join each mouse's two samples
+  geom_point(aes(colour = Source), size = 3) +
+  scale_fill_manual(values = c(Gut = "#E69F00", Stool = "#0072B2")) +
+  scale_colour_manual(values = c(Gut = "#E69F00", Stool = "#0072B2")) +
+  labs(x = "Sample source",
+       y = "Proportion of reads from Firmicutes",
+       title = "Firmicutes in gut and stool samples",
+       subtitle = "Lines join the two samples from the same mouse") +
+  theme_minimal(base_size = 14) +
+  theme(legend.position = "none")
+
+ggsave("firmicutes_gut_vs_stool.png", width = 6, height = 5, dpi = 300)
+```
+
+The lines show something the boxplot hides: in most mice, the stool sample has more Firmicutes than the gut sample.
+That is why the paired test in section 9 is the right one. Download your PNG with `scp`, like the CSV in section 10.
+
+**Using AI well:**
+
+- **Run it and look.** Does the plot show what you asked for? Here: does each line really join the same mouse?
+- **Read the code.** Ask the AI to explain any line you don't understand. You are responsible for code you use.
+- **Paste errors back.** If the code fails, copy the error message into the chat and ask what went wrong.
+- **Expect confident mistakes.** AI can invent column names, functions or packages, and choose the wrong statistical test. Check against your data and your question.
+- **Protect your data.** Don't paste unpublished, confidential or patient data. The `str()` description is usually enough.
+- **Be open about it.** Many journals ask you to say how you used AI; check their rules.
+
+**Try it:** ask the AI to change the plot so the lines are coloured by whether Firmicutes went up or down from gut to stool.
+Or ask for a stacked bar chart showing all five phyla for every sample.
+
 ### Cheat sheet
 
 | Code | What it does |
