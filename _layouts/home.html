@@ -64,6 +64,17 @@ layout: base
     <div class="side">
       {% include connect.html %}
 
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Contact the instructors</h2>
+        <ul>
+          {% for i in site.data.instructors %}
+          <li><span class="contact-name">{{ i.name }}</span>
+            <span class="contact-aff">{{ i.affiliation }}</span>
+            <a href="mailto:{{ i.email }}">{{ i.email }}</a></li>
+          {% endfor %}
+        </ul>
+      </section>
+
       <section class="quick" aria-labelledby="quick-title">
         <h2 id="quick-title">Keep these open</h2>
         <ul>

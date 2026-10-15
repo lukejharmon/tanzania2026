@@ -114,3 +114,16 @@
       title: Wrap-up
       anchor: wrap-up
       kind: talk
+
+- id: day5
+  label: Day 5
+  date: 2026-10-16
+  weekday: Friday
+  day_month: 16 October
+  theme: Certificates and questions
+  page: /day5.html
+  sessions:
+    - time: "10:00 – 11:00"
+      title: Certificate presentations and Q&A
+      anchor: certificates
+      kind: other
