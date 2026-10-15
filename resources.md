@@ -14,6 +14,7 @@ Everything from the workshop in one place.
 ## Keep going
 
 - [Keep going](keep-going.html): the material we didn't have time for, step by step, to try on your own
+- [Installing the workshop software on a cluster](cluster-setup.html): for NM-AIST IT, or for your own account
 
 ## Challenges
 

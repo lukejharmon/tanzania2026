@@ -1,0 +1,14 @@
+# R and packages from the Workshop on Bioinformatics and Microbiome Research
+# Create with:  conda env create -f r-workshop.yml
+name: r-workshop
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - r-base
+  - r-tidyverse
+  - r-ape
+  - r-patchwork
+  - r-rcolorbrewer
+  - r-vegan
+  - bioconductor-phyloseq

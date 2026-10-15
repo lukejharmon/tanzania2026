@@ -46,7 +46,7 @@ conda activate genomics
 On a newer Mac (M1 or later), if conda says it can't find a package, put `CONDA_SUBDIR=osx-64` in front of the `conda create` command.
 {: .tip}
 
-**The NM-AIST computing cluster.** Ask NM-AIST IT whether the workshop software has been installed, and how to get an account.
+**The NM-AIST computing cluster.** Ask NM-AIST IT whether the workshop software has been installed, and how to get an account. Instructions for installing it (for IT, or for yourself without administrator rights) are on the [cluster setup page](cluster-setup.html).
 
 ## 2. Shell scripts {#shell-scripts}
 

@@ -1,0 +1,18 @@
+# Command-line tools from the Workshop on Bioinformatics and Microbiome Research
+# Create with:  conda env create -f genomics.yml
+name: genomics
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - fastqc
+  - trimmomatic
+  - bwa
+  - samtools
+  - bcftools        # includes vcfutils.pl
+  - kraken2
+  - kraken-biom
+  - sra-tools       # fasterq-dump, for downloading reads from SRA
+  - curl
+  - wget
+  - nano
