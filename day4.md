@@ -21,7 +21,7 @@ The cloud computers will be shut down after the workshop. Anything you want to k
 This is a terminal on **your own laptop**, not the Terminal tab in RStudio.
 
 - **Mac:** press Cmd + Space, type `Terminal`, press Enter.
-- **Windows:** click Start, type `PowerShell`, press Enter.
+- **Windows:** click Start, type `PowerShell`, and open **Windows PowerShell**. Do **not** choose *Windows PowerShell ISE*: it can't ask for passwords, so `scp` won't work there.
 
 Check the prompt. If it starts with `dcuser@ip-...` you are on the server: open a new terminal on your laptop instead.
 
@@ -97,7 +97,9 @@ Always run `scp` **on your laptop**. The laptop side is written as a plain path;
 | `Permission denied, please try again` | Wrong password | Type `data4Carp` again carefully (capital C) |
 | `Could not resolve hostname` | Wrong server name | Copy it again from the address bar, without `http://` or `:8787` |
 | No password request, and no file on the server | The `:` after the server name is missing | Add the `:` and run it again |
-| `Connection timed out` | The network is blocking `scp` | Use RStudio instead (below) |
+| Nothing happens, `Connection timed out`, `Connection reset` or `Broken pipe`, or the transfer stops partway | The internet dropped out or is too slow | Check that a web page loads, wait a minute, then run the same command again (press the up arrow to get it back) |
+| No password prompt on Windows, the command hangs, or an error about the console or handle | You are in *Windows PowerShell ISE* | Close it and open **Windows PowerShell** (not ISE) |
+| `Connection timed out` every time, even when the internet works | The network is blocking `scp` | Use RStudio instead (below) |
 | `'scp' is not recognized` | Older Windows without scp | Use RStudio instead (below) |
 | Prompt says `dcuser@ip-...` | You are typing on the server | Open a terminal on your laptop |
 
