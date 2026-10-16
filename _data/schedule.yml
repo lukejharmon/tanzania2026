@@ -127,3 +127,7 @@
       title: Certificate presentations and Q&A
       anchor: certificates
       kind: other
+    - time: ""
+      title: Final survey
+      anchor: survey
+      kind: other
