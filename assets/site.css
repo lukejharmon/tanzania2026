@@ -293,6 +293,8 @@ article.prose { padding-top: 40px; padding-bottom: 72px; }
 .footer-inner { max-width: var(--wrap); margin: 0 auto; padding: 24px; display: flex; gap: 32px; flex-wrap: wrap; }
 .footer-text { display: flex; flex-direction: column; gap: 8px; }
 .footer p { margin: 0; }
+.footer-aside { font-size: 13px; font-style: italic; }
+.footer-aside a { color: inherit; }
 
 /* ---------- Small screens ---------- */
 
